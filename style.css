@@ -1,0 +1,153 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-seri;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+
+}
+
+/* styling the main container */
+
+.main-container {
+    margin: 50px 20px;
+    display: grid;
+    gap: 25px;
+    width: 90%;
+  
+    
+
+}
+/* header*/
+
+header {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+header span {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    
+    
+
+}
+header h1 {
+    font-weight: 200;
+    color:hsl(229, 6%, 66%);  
+    font-size: 30px;
+}
+
+
+header p {
+color:hsl(229, 6%, 66%); 
+font-weight: 400;
+font-size: 15px;
+}
+
+/*gruping selecting cards*/
+
+.supervisor-card, .team-builder, .karma, .calculator{
+    width:80%;
+    height: 250px;
+    margin: auto;
+    border-radius: 10px;
+    border: solid;
+    border-width: 0.1px;
+    border-color: hsl(180, 62%, 55%);
+    border-top-width: 5px;
+    box-shadow: 5px 5px 15px #888888;
+
+}
+.supervisor-card h1, .team-builder h1, .karma h1,.calculator h1{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 18px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    
+
+}
+.supervisor-card p, .team-builder p, .karma p, .calculator p{
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 30px;
+    color: hsl(229, 6%, 66%); 
+}
+
+
+.supervisor-card .lupa, .team-builder .builder, .light, .pc{
+    position: relative;
+    left: 250px;
+    top:20px;
+}
+
+/*styling team-build card border-color*/
+.team-builder {
+    border-color: hsl(0, 78%, 62%);
+}
+
+/*styling karma boder-color*/
+.karma {
+    border-color: hsl(34, 97%, 64%);
+}
+
+/*styling calculator border-color*/
+ .calculator {
+     border-color: hsl(212, 86%, 64%);
+ }
+
+
+
+
+ @media only screen and (min-width: 1000px) {
+    .main-container {
+        margin:auto;
+        margin-top: 40px;
+        margin-bottom:40px ;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+        
+       
+    }
+
+    header {
+        width: 46%;
+        grid-column-start: 1 ;
+        grid-column-end:4 ;
+    }
+    .team-builder {
+        width: 100%;
+        grid-column-start:2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .karma {
+        width: 100%;
+        grid-column-start:2;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
+       
+    }
+    .supervisor-card {
+        width: 100%;
+        grid-column-start:1;
+        grid-column-end:2;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+    .calculator {
+        width: 100%;
+        grid-column-start:3;
+        grid-column-end:4;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+ }
