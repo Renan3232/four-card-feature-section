@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Git hub](https://github.com/Renan3232/four-card-feature-section)
+- Live Site URL: [site URL ](https://serene-bassi-cd6dc1.netlify.app/)
 
 ## My process
 I started styling the mobile-desgin first then moving to desktop-design.
